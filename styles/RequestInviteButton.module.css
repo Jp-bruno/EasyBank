@@ -1,0 +1,10 @@
+.button {
+    border-radius: 50px;
+    padding: 13px 25px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    background-image: linear-gradient(45deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    width: fit-content;
+    cursor: pointer;
+}
