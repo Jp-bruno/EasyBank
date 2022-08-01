@@ -1,6 +1,7 @@
 .firstPanel {
     padding: 150px 120px 250px;
     position: relative;
+    background-color: hsl(0, 0%, 98%);
     background-image: url('/images/others/bg-intro-desktop.svg');
     background-repeat: no-repeat;
     background-position: 550px -250px;
@@ -31,14 +32,114 @@
         }
 
         p {
-            color: hsl(0, 0%, 53%);
+            color: var(--subtitle-gray);
             font-weight: 400;
-
         }
     }
 }
 
 .secondPanel {
+    background-color: hsl(220, 16%, 96%);
+    padding: 100px 120px 150px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 70px;
+
+    & .textDiv {
+        width: clamp(300px, 600px, 70%);
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+
+        h1 {
+            font-size: 40px;
+            font-weight: 300;
+            color: hsl(0, 0%, 17%);
+        }
+
+        p {
+            color: hsl(0, 0%, 53%);
+            font-weight: 400;
+        }
+    }
+
+    & ul {
+        display: flex;
+        column-gap: 20px;
+    }
+
+    & .secondPanelListItem {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+
+        h2 {
+            font-weight: 300;
+            color: var(--h2-gray);
+        }
+
+        p {
+            color: var(--subtitle-gray);
+        }
+    }
+}
+
+.thirdPanel {
     padding: 100px 120px 250px;
-    border: solid 1px red;
+    background-color: hsl(0, 0%, 98%);
+
+    h1 {
+        font-size: 40px;
+        font-weight: 300;
+        color: hsl(0, 0%, 17%);
+        margin-bottom: 60px;
+    }
+
+    & ul {
+        display: flex;
+        flex-direction: row;
+        column-gap: 25px;
+    }
+
+    & .thirdPanelListItem {
+        display: grid;
+        grid-template-rows: 50% auto auto auto;
+        row-gap: 10px;
+        background-color: white;
+        border-radius: 8px;
+        overflow: hidden;
+        padding-bottom: 20px;
+        min-width: 250px;
+
+        h2,
+        small,
+        p {
+            padding-inline: 25px;
+        }
+
+        small {
+            margin-top: 20px;
+            color: var(--subtitle-gray);
+            font-size: 12px;
+        }
+
+        h2 {
+            font-weight: 500;
+            font-size: 110%;
+            color: var(--h2-gray);
+
+            a {
+                transition: color 0.09s linear;
+
+                &:hover {
+                    color: hsl(192, 70%, 51%);
+
+                }
+            }
+        }
+
+        p {
+            color: var(--subtitle-gray);
+        }
+    }
 }

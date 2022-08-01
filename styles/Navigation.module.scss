@@ -2,6 +2,15 @@
     position: relative;
     font-size: 14px;
     color: hsl(0, 0%, 68%);
+    transition: color 0.2s ease;
+
+    &:hover {
+        color: black;
+    }
+
+    &:hover > a::after {
+        transform: translateY(950%) scaleY(1);
+    }
 
     a::after {
         content: '';
@@ -12,14 +21,6 @@
         transform: translateY(950%) scaleY(0);
         transition: 0.2s transform ease;
         transform-origin: bottom;
-    }
-
-    &:hover {
-        color: black;
-    }
-
-    &:hover > a::after {
-        transform: translateY(950%) scaleY(1);
     }
 
     a {
