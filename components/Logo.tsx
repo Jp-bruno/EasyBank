@@ -1,5 +1,9 @@
 import Image from "next/image";
 
-export default function Logo() {
-    return <Image src='/images/others/logo.svg' layout='fixed' width={139} height={20} alt='Logo EasyBank' />
+type Logo = {
+    dark?: Boolean
+}
+
+export default function Logo({dark}:Logo) {
+    return <Image src={`/images/others/${dark ? 'logoDark' : 'logoWhite'}.svg`} layout='fixed' width={139} height={20} alt='Logo EasyBank' />
 }

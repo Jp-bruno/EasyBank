@@ -1,0 +1,54 @@
+.footer {
+    background-color: hsl(233, 26%, 24%);
+    padding: 50px 120px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerMainUl {
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    width: 50%;
+}
+
+.footerListItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .socialMediaList {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    & ul:not(.socialMediaList) {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        color: hsl(0, 0%, 76%);
+        justify-content: space-between;
+
+        a {
+            transition: color 0.1s linear;
+
+            &:hover {
+                color: hsl(192, 70%, 51%);
+            }
+        }
+    }
+}
+
+
+
+.footerLastDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    small {
+        color: hsla(0, 0%, 59%, 0.915);
+
+    }
+}
