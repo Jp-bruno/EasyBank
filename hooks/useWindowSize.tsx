@@ -5,8 +5,9 @@ export default function useWindowSize() {
     useEffect(() => {
         window.onresize = () => {
             // setWindowSize(window.outerWidth)
-            setWindowSize(window.outerWidth)
+            setWindowSize(window.innerWidth)
         }
+        
     }, [])
 
     return windowSize
