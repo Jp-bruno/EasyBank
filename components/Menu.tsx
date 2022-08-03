@@ -10,7 +10,7 @@ const pages = ['Home', 'About', 'Contact', 'Blog', 'Careers']
 function ListItem({text}:ListItemProps) {
     return (
         <li className={styles.listItem}>
-            <a className={styles.listItemLink}>
+            <a href='' className={styles.listItemLink}>
                 {text}
             </a>
         </li>

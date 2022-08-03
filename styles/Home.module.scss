@@ -29,6 +29,8 @@
         h1 {
             font-size: 50px;
             font-weight: 300;
+            color: hsl(0, 0%, 17%);
+
         }
 
         p {
@@ -146,7 +148,7 @@
 
 @media (max-width: 900px) {
     .firstPanel {
-        padding: 300px 0 80px;
+        padding: 90% 0 80px;
         background-image: url('/images/others/bg-intro-mobile.svg');
         background-position: top -70px center;
         z-index: 1;
@@ -159,9 +161,10 @@
         }
 
         & .textDiv {
+            min-width: 100%;
 
             h1 {
-                font-size: 40px;
+                font-size: 230%;
                 text-align: center;
             }
 
@@ -180,9 +183,7 @@
         }
 
         .textDiv {
-            width: 100%;
-
-            p {}
+            margin-inline: auto;
         }
 
         ul {
