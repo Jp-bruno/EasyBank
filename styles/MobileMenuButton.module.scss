@@ -12,3 +12,10 @@
         background-image: url('/images/icons/icon-close.svg');
     }
 }
+
+@media (min-width: 900px) {
+    .mobileMenuButton {
+        display: none;
+
+    }
+}

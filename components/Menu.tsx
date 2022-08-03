@@ -1,4 +1,3 @@
-import { useRef } from 'react';
 import styles from '../styles/Navigation.module.scss';
 
 type ListItemProps = {
