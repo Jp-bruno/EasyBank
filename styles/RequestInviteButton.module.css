@@ -11,6 +11,7 @@
 
 @media (max-width: 900px) {
     .button {
-        display: none;
+        margin-inline: auto;
+        transform: scale(1.3);
     }
 }

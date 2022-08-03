@@ -55,7 +55,6 @@ const Home: NextPage = () => {
     }
   ]
 
-
   return (
     <div className={styles.container}>
       <section className={styles.firstPanel}>
