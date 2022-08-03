@@ -1,13 +1,13 @@
-
 .header {
     display: flex;
     justify-content: space-between;
     padding-inline: 120px;
     align-items: center;
+}
 
-    ul {
-        display: flex;
-        column-gap: 30px;
-        height: 80px;
+@media (max-width: 900px) {
+    .header {
+        justify-content: space-between;
+        padding: 20px;
     }
 }
